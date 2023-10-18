@@ -1,0 +1,5 @@
+team
+
+event
+
+register
