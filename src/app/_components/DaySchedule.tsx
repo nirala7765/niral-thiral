@@ -2,7 +2,7 @@ import React from 'react'
 
 const DaySchedule = () => {
   return (
-    <div className='Schedule-Container sm:'>
+    <div className='Schedule-Container'>
 
         <div className="day">
             <h1 className="day-tilte">Day-1</h1>
