@@ -35,7 +35,7 @@ const Footer = () => {
           
         </a></li>
       <li className="social-icon__item"><a className="social-icon__link" href="#">
-        <CgWebsite/>
+       
          
         </a></li>
     </ul>
@@ -47,7 +47,7 @@ const Footer = () => {
       <li className="menu__item"><a className="menu__link" href="#">Contact</a></li>
 
     </ul>
-    <p>&copy;2023 Niral-Thiral | All Rights Reserved</p>
+    <p>&copy;2023 Niral-Thiral | At Annad Institute of Higher Technology</p>
   </footer>
   
 

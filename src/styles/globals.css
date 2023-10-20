@@ -75,74 +75,91 @@
   }
 }
 
-
-.Schedule-Container{
+/* Default styles for larger screens */
+.Schedule-Container {
   display: flex;
   flex-direction: row;
-  gap: 80px;
+  gap: 70px; 
   margin: 20px auto;
-
+  flex-wrap: wrap; 
 }
 
-.day{
-  max-width: 288px;
-  height: 333px;
+.day {
+  max-width: 388px;
+  flex: 1; 
+  height: 300px; 
   background-color: #279EFF;
   border-radius: 10px;
-  justify-content: center;
-  align-items: center;
   color: white;
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 30px; 
 
-
+  /* Center content horizontally and vertically */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
+
 .day-tilte{
 
-  font-size: 30px;
-  font-weight: bolder;
-  margin: 20px auto;
-  text-align: center;
-  
-}
-.day-desc{
-  font-size: 20px;
-  text-align: center;
-  margin: 20px;
-}
-.day-area{
-  color: #D5FFD0;
-  margin: 20px;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bolder
+  font-size: 25px;
 
 }
+
+.day-area{
+  color: #D5FFD0;
+}
+
+/* Media query for screens smaller than 768px (mobile) */
+@media (max-width: 768px) {
+  .Schedule-Container {
+    flex-direction: column; /* Stack cards vertically on mobile screens */
+    gap: 0; /* Remove the gap between cards */
+  }
+
+  .day {
+    max-width: 100%; /* Expand the card to full width on smaller screens */
+    height: auto; /* Allow variable card height depending on content */
+    padding: 10px; /* Adjust padding for better spacing */
+    font-size: 14px; /* Adjust font size for smaller screens */
+    margin: 10px 0; /* Add margin for spacing between cards */
+  }
+}
+
+/* Media query for screens between 768px and 1024px (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .day {
+    max-width: 50%; /* Make the card take up half the width on tablets */
+    height: 300px; /* Adjust the height as needed */
+  }
+}
+
+/* Media query for screens larger than 1024px (responsive design) */
+@media (min-width: 1025px) {
+  .day {
+    /* You can add styles specific to larger screens here */
+  }
+}
+
+
 
 
 /* footers css */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 
-body {
-  display: flex;
-  background: #333;
-  justify-content: flex-end;
-  align-items: flex-end;
-  min-height: 100vh;
-} */
 
+
+
+
+
+ /* Default styles for larger screens */
 .footer {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   background: #3586ff;
   min-height: 100px;
   padding: 20px 50px;
@@ -206,9 +223,17 @@ body {
   left: 0;
   width: 100%;
   height: 100px;
-  background: "";
-  
+  background: url("../app/wave.png");
+
   background-size: 1000px 100px;
+}
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px; /* Corrected typo here */
+  }
 }
 
 .wave#wave1 {
@@ -239,21 +264,24 @@ body {
   animation: animate 3s linear infinite;
 }
 
-@keyframes animateWaves {
-  0% {
-    background-position-x: 1000px;
-  }
-  100% {
-    background-positon-x: 0px;
-  }
-}
+/* Media query for screens smaller than 768px (mobile) */
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px; /* Adjust padding for better spacing on mobile screens */
+    min-height: auto; /* Allow variable height depending on content */
+    max-width: 100%;
+    
 
-@keyframes animate {
-  0% {
-    background-position-x: -1000px;
   }
-  100% {
-    background-positon-x: 0px;
+
+  .social-icon__link,
+  .menu__link {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    margin: 0 5px; /* Reduce the margin for spacing */
+  }
+
+  .wave {
+    display: none; /* Hide the waves on mobile screens */
   }
 }
 
