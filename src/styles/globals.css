@@ -89,9 +89,9 @@
 }
 
 .day {
-  max-width: 288px;
+  max-width: 300px;
   flex: 1; 
-  height: 300px; 
+  max-height: 350px; 
   background-color: #279EFF;
   border-radius: 10px;
   color: white;
@@ -121,6 +121,7 @@
 @media (max-width: 768px) {
   .Schedule-Container {
     max-width: 100%;
+    max-height: 100%;
     flex-direction: column; /* Stack cards vertically on mobile screens */
     gap: 0; /* Remove the gap between cards */
   }
@@ -174,32 +175,27 @@
   background-color: #3586ff;
   color: #fefefe;
   position: relative;
-  width: 100%;
+  max-width:  100%;
   bottom: 0;
   left: 0;
 
   margin-top: 200px;
 }
 
-.footer .heading {
-  color: #fefefe;
-  max-width: 1010px;
-  width: 90%;
-  text-transform: uppercase;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
+
 
 .footer .content {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   margin: 1.5rem;
+  justify-content: center;
+  align-items: center;
+
+ 
 }
 
-.footer .content p {
-  margin-bottom: 1.3rem;
-}
+
 
 .footer .content a {
   text-decoration: none;
@@ -210,18 +206,14 @@
   border-bottom: 1px solid #971717;
 }
 
-.footer .content h4 {
-  margin-bottom: 1.3rem;
-  font-size: 19px;
-}
 
 footer {
   text-align: center;
-  margin-bottom: 2rem;
+  
 }
 
 footer hr {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 @media (max-width: 767px) {
@@ -233,6 +225,7 @@ footer hr {
 
   .footer {
     position: unset;
+    bottom: 0;
   }
 }
 
@@ -316,10 +309,6 @@ footer hr {
 
 
 
-.social-icon li{
-  margin-top: 10px;
-  
-}
 
 
 
@@ -330,7 +319,7 @@ footer hr {
   display: flex;
 
   margin: 10px 0;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -349,22 +338,6 @@ footer hr {
 .social-icon__link:hover {
   transform: translateY(-10px);
 }
-
-.menu__link {
-  font-size: 1.2rem;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
-  text-decoration: none;
-  opacity: 0.75;
-  font-weight: 300;
-}
-
-.menu__link:hover {
-  opacity: 1;
-}
-
 
 
 
