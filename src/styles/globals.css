@@ -80,7 +80,7 @@
   max-width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 70px; 
+  gap: 40px; 
   margin: 20px auto;
   flex-wrap: wrap; 
   align-items: center;
@@ -91,14 +91,14 @@
 .day {
   max-width: 300px;
   flex: 1; 
-  max-height: 350px; 
+  height: 320px; 
   background-color: #279EFF;
   border-radius: 10px;
   color: white;
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  gap: 30px; 
+  gap: 20px; 
 
   /* Center content horizontally and vertically */
   justify-content: center;
@@ -120,8 +120,8 @@
 /* Media query for screens smaller than 768px (mobile) */
 @media (max-width: 768px) {
   .Schedule-Container {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     flex-direction: column; /* Stack cards vertically on mobile screens */
     gap: 0; /* Remove the gap between cards */
   }
@@ -139,13 +139,15 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   .day {
     max-width: 50%; /* Make the card take up half the width on tablets */
-    height: 300px; /* Adjust the height as needed */
+    height: 320px; /* Adjust the height as needed */
   }
 }
 
 /* Media query for screens larger than 1024px (responsive design) */
 @media (min-width: 1025px) {
   .day {
+    max-width: 288px;
+    max-height: 320px;
     /* You can add styles specific to larger screens here */
   }
 }
