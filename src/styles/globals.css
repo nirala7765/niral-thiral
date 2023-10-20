@@ -74,3 +74,215 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Default styles for larger screens */
+.Schedule-Container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 70px; 
+  margin: 20px auto;
+  flex-wrap: wrap; 
+}
+
+.day {
+  max-width: 388px;
+  flex: 1; 
+  height: 300px; 
+  background-color: #279EFF;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+
+  /* Center content horizontally and vertically */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.day-tilte{
+
+  font-size: 25px;
+
+}
+
+.day-area{
+  color: #D5FFD0;
+}
+
+/* Media query for screens smaller than 768px (mobile) */
+@media (max-width: 768px) {
+  .Schedule-Container {
+    max-width: 100%;
+    flex-direction: column; /* Stack cards vertically on mobile screens */
+    gap: 0; /* Remove the gap between cards */
+  }
+
+  .day {
+    max-width: 100%; /* Expand the card to full width on smaller screens */
+    height: auto; /* Allow variable card height depending on content */
+    padding: 10px; /* Adjust padding for better spacing */
+    font-size: 14px; /* Adjust font size for smaller screens */
+    margin: 10px 0; /* Add margin for spacing between cards */
+  }
+}
+
+/* Media query for screens between 768px and 1024px (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .day {
+    max-width: 50%; /* Make the card take up half the width on tablets */
+    height: 300px; /* Adjust the height as needed */
+  }
+}
+
+/* Media query for screens larger than 1024px (responsive design) */
+@media (min-width: 1025px) {
+  .day {
+    /* You can add styles specific to larger screens here */
+  }
+}
+
+
+
+
+/* footers css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+
+
+
+
+
+ /* Default styles for larger screens */
+.footer {
+  position: relative;
+  
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../app/wave.png");
+
+  background-size: 1000px 100px;
+}
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px; /* Corrected typo here */
+  }
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+/* Media query for screens smaller than 768px (mobile) */
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px; /* Adjust padding for better spacing on mobile screens */
+    min-height: auto; /* Allow variable height depending on content */
+   
+
+  }
+
+  .social-icon__link,
+  .menu__link {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    margin: 0 5px; /* Reduce the margin for spacing */
+  }
+
+  .wave {
+    display: none; /* Hide the waves on mobile screens */
+  }
+}
+

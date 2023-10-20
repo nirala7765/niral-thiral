@@ -8,6 +8,9 @@ export default function Home() {
     <Navbar />
     <HomeSection />
     <HomeEvents />
+
   </main>;
+
+ 
 
 }
