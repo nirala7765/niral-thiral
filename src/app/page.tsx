@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { IoIosArrowDown } from 'react-icons/io';
 import Navbar from './_components/Navbar';
 import { Tabs, TabsContent, TabsList, TabsTrigger  } from '@/components/ui/tabs';
+import DaySchedule from './_components/DaySchedule';
 
 
 
@@ -65,21 +66,8 @@ export default function Home() {
     </div>
   </div>
   <div className='w-full h-[100svh] flex columns-3'>
-    <div className='bg-white w-full h-full'>
-      
-    </div>
-    <div className='bg-red w-full h-full'>
-    <Tabs defaultValue="account" className="w-[400px]">
-  <TabsList>
-    <TabsTrigger value="account">Account</TabsTrigger>
-    <TabsTrigger value="password">Password</TabsTrigger>
-  </TabsList>
-  <TabsContent value="account">Make changes to your account here.</TabsContent>
-  <TabsContent value="password">Change your password here.</TabsContent>
-</Tabs>
-
-    </div>
-    <div className='bg-black w-full h-full'></div>
+    <DaySchedule/>
+    
 
   </div>
 
