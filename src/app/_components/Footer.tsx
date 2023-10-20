@@ -13,7 +13,7 @@ const Footer = () => {
 
 
 
-  <footer className="footer">
+  <footer className="footer max-w-[100%] sm:max-w[390px]">
     <div className="waves">
       <div className="wave"  id="wave1"></div>
       <div className="wave" id="wave2"></div>

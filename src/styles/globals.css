@@ -77,6 +77,7 @@
 
 /* Default styles for larger screens */
 .Schedule-Container {
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   gap: 70px; 
@@ -116,6 +117,7 @@
 /* Media query for screens smaller than 768px (mobile) */
 @media (max-width: 768px) {
   .Schedule-Container {
+    max-width: 100%;
     flex-direction: column; /* Stack cards vertically on mobile screens */
     gap: 0; /* Remove the gap between cards */
   }
@@ -159,7 +161,7 @@
  /* Default styles for larger screens */
 .footer {
   position: relative;
-  max-width: 100%;
+  
   background: #3586ff;
   min-height: 100px;
   padding: 20px 50px;
@@ -269,8 +271,7 @@
   .footer {
     padding: 10px; /* Adjust padding for better spacing on mobile screens */
     min-height: auto; /* Allow variable height depending on content */
-    max-width: 100%;
-    
+   
 
   }
 

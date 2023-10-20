@@ -69,6 +69,7 @@ export default function Home() {
   <div className='w-full h-[100svh] flex columns-3'>
     <DaySchedule/>
     
+    
 
   </div>
 
