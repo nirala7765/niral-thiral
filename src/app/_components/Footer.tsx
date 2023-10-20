@@ -31,7 +31,7 @@ const Footer = () => {
           
         </a></li>
       <li className="social-icon__item"><a className="social-icon__link" href="#">
-        <IoLogoLinkedin/>
+        <IoLogoLinkedin />
           
         </a></li>
       <li className="social-icon__item"><a className="social-icon__link" href="#">
