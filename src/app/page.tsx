@@ -4,6 +4,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 import Navbar from './_components/Navbar';
 import { Tabs, TabsContent, TabsList, TabsTrigger  } from '@/components/ui/tabs';
 import DaySchedule from './_components/DaySchedule';
+import Footer from './_components/Footer';
 
 
 
@@ -71,6 +72,10 @@ export default function Home() {
 
   </div>
 
+  <Footer/>
+
   </main>;
+
+ 
 
 }
