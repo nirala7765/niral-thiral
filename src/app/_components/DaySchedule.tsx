@@ -6,7 +6,7 @@ const DaySchedule = () => {
 
         <div className="day">
             <h1 className="day-tilte">Day-1</h1>
-            <p className="day-desc">NAAN MUDHALVAN’IN<br/>TECH WAR!</p>
+            <p className="day-desc">TECH WAR!</p>
             <p className="day-area">An Intra college event</p>
 
 
