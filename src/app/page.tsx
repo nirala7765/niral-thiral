@@ -7,12 +7,14 @@ import Footer2 from './_components/Footer2';
 
 
 
+
 export default function Home() {
   return <main>
     <Navbar />
     <HomeSection />
     <DaySchedule/>
     <HomeEvents />
+    
     <Footer2/>
 
     
