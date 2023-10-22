@@ -4,6 +4,9 @@ import HomeEvents from './_components/HomeEvents';
 import DaySchedule from './_components/DaySchedule';
 import Footer from './_components/Footer';
 import Footer2 from './_components/Footer2';
+import ContactUs from './_components/ContactUs';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+
 
 
 export default function Home() {
@@ -11,8 +14,11 @@ export default function Home() {
     <Navbar />
     <HomeSection />
     <DaySchedule/>
-    <HomeEvents />
-    <Footer2/>
+    <HomeEvents/>
+
+    <ContactUs/>
+    
+
 
     
 

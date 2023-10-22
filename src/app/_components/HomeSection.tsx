@@ -7,7 +7,7 @@ const HomeSection = () => {
 
     <div className="bottom-[0svh] absolute flex justify-center w-full">
         <div className="flex">
-         <IoIosArrowDown size={75}/>
+         <IoIosArrowDown size={75} color='#7F1FFD'/>
         </div>
       </div>
     
